@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.0.1] - 2021-10-05
+
 ### Added
 - B2B Orders History compatible with `vtex.storefront-permissions` and `vtex.b2b-organizations-graphql`
 
