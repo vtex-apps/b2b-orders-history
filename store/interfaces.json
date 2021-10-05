@@ -1,0 +1,16 @@
+{
+  "my-orders": {
+    "component": "ExtensionRouter",
+    "required": ["my-orders-extra-actions-container"]
+  },
+  "my-orders-link": {
+    "component": "ExtensionLinks"
+  },
+  "my-orders-extra-actions-container": {
+    "allowed": ["my-orders-extra-actions"]
+  },
+  "my-orders-extra-actions": {
+    "component": "*",
+    "extensibility": "public"
+  }
+}

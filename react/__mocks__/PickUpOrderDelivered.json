@@ -1,0 +1,792 @@
+{
+  "orderId": "v1363788v-01",
+  "sequence": "1363788",
+  "marketplaceOrderId": "",
+  "marketplaceServicesEndpoint": "http://oms.vtexinternal.com.br/api/oms?an=studioz",
+  "sellerOrderId": "00-v1363788v-01",
+  "origin": "Marketplace",
+  "affiliateId": "",
+  "salesChannel": "2",
+  "merchantName": null,
+  "status": "invoiced",
+  "statusDescription": "Faturado",
+  "value": 14999,
+  "creationDate": "2019-08-07T12:37:20.4614170+00:00",
+  "lastChange": "2019-08-07T16:15:17.4720098+00:00",
+  "orderGroup": "v1363788v",
+  "totals": [
+    {
+      "id": "Items",
+      "name": "Total dos Itens",
+      "value": 14999
+    },
+    {
+      "id": "Discounts",
+      "name": "Total dos Descontos",
+      "value": 0
+    },
+    {
+      "id": "Shipping",
+      "name": "Total do Frete",
+      "value": 0
+    },
+    {
+      "id": "Tax",
+      "name": "Total da Taxa",
+      "value": 0
+    }
+  ],
+  "items": [
+    {
+      "uniqueId": "6A19AB1A1C714EECBD28B0B94EB5973B",
+      "id": "214852",
+      "productId": "23926",
+      "ean": "1000000193855",
+      "lockId": "00-v1363788v-01",
+      "itemAttachment": {
+        "content": {},
+        "name": null
+      },
+      "attachments": [],
+      "quantity": 1,
+      "seller": "1",
+      "name": "Tênis Feminino Converse All Star CT AS Core OX Lona Branco - 38",
+      "refId": "000000005004938005",
+      "price": 14999,
+      "listPrice": 11999,
+      "manualPrice": null,
+      "priceTags": [],
+      "imageUrl": "https://gabrielacalcados.vteximg.com.br/arquivos/ids/283708-100-100/TENIS-FEMININO-CONVERSE-ALL-STAR-CT-AS-CORE-OX-LONA-BRANCO-1.jpg?v=636777089044600000",
+      "detailUrl": "/tenis-feminino-converse-all-star-ct-as-core-ox-lona-branco000000000005004938/p",
+      "components": [],
+      "bundleItems": [],
+      "params": [],
+      "offerings": [],
+      "sellerSku": "214852",
+      "priceValidUntil": null,
+      "commission": 0,
+      "tax": 0,
+      "preSaleDate": null,
+      "additionalInfo": {
+        "brandName": "ALL STAR",
+        "brandId": "23",
+        "categoriesIds": "/1000036/1000032/1000071/",
+        "productClusterId": "137,172,215,220,227,230,232,239,242,252,259,278,320,368,395,431,436,473,488,498,543,549",
+        "commercialConditionId": "1",
+        "dimension": {
+          "cubicweight": 1,
+          "height": 0.1,
+          "length": 0.3,
+          "weight": 750,
+          "width": 0.2
+        },
+        "offeringInfo": null,
+        "offeringType": null,
+        "offeringTypeId": null
+      },
+      "measurementUnit": "un",
+      "unitMultiplier": 1,
+      "sellingPrice": 14999,
+      "isGift": false,
+      "shippingPrice": null,
+      "rewardValue": 0,
+      "freightCommission": 0,
+      "priceDefinitions": null,
+      "taxCode": "",
+      "parentItemIndex": null,
+      "parentAssemblyBinding": null,
+      "callCenterOperator": null,
+      "serialNumbers": null,
+      "sellerName": "Studio Z",
+      "logisticsInfo": {
+        "itemIndex": 0,
+        "selectedSla": "Retirar na Loja SC (c324e99a-a43c-4548-96e7-bde974ee8cfa)",
+        "lockTTL": "12d",
+        "price": 0,
+        "listPrice": 0,
+        "sellingPrice": 0,
+        "deliveryWindow": null,
+        "deliveryCompany": "Retirar em Loja SC - 8 Dias",
+        "shippingEstimate": "11bd",
+        "shippingEstimateDate": "2099-11-30T13:57:59.2905626+00:00",
+        "slas": [
+          {
+            "id": "Azul Cargo",
+            "name": "Azul Cargo",
+            "shippingEstimate": "6bd",
+            "deliveryWindow": null,
+            "price": 1186,
+            "deliveryChannel": "delivery",
+            "pickupStoreInfo": {
+              "additionalInfo": null,
+              "address": null,
+              "dockId": null,
+              "friendlyName": null,
+              "isPickupStore": false
+            },
+            "polygonName": null,
+            "lockTTL": "12d"
+          },
+          {
+            "id": "Sedex",
+            "name": "Sedex",
+            "shippingEstimate": "2bd",
+            "deliveryWindow": null,
+            "price": 1809,
+            "deliveryChannel": "delivery",
+            "pickupStoreInfo": {
+              "additionalInfo": null,
+              "address": null,
+              "dockId": null,
+              "friendlyName": null,
+              "isPickupStore": false
+            },
+            "polygonName": null,
+            "lockTTL": "12d"
+          },
+          {
+            "id": "Azul Expresso",
+            "name": "Azul Expresso",
+            "shippingEstimate": "3bd",
+            "deliveryWindow": null,
+            "price": 2079,
+            "deliveryChannel": "delivery",
+            "pickupStoreInfo": {
+              "additionalInfo": null,
+              "address": null,
+              "dockId": null,
+              "friendlyName": null,
+              "isPickupStore": false
+            },
+            "polygonName": null,
+            "lockTTL": "12d"
+          },
+          {
+            "id": "Retirar na Loja SC (c324e99a-a43c-4548-96e7-bde974ee8cfa)",
+            "name": "Retirar na Loja SC (c324e99a-a43c-4548-96e7-bde974ee8cfa)",
+            "shippingEstimate": "11bd",
+            "deliveryWindow": null,
+            "price": 0,
+            "deliveryChannel": "pickup-in-point",
+            "pickupStoreInfo": {
+              "additionalInfo": "",
+              "address": {
+                "addressType": "pickup",
+                "receiverName": null,
+                "addressId": "c324e99a-a43c-4548-96e7-bde974ee8cfa",
+                "postalCode": "88301-320",
+                "city": "Itajaí",
+                "state": "SC",
+                "country": "BRA",
+                "street": "Rua Samuel Heusi",
+                "number": "234",
+                "neighborhood": "Centro",
+                "complement": "",
+                "reference": null,
+                "geoCoordinates": [
+                  -48.65995570000001,
+                  -26.9040248
+                ]
+              },
+              "dockId": "1f4ebf5",
+              "friendlyName": "Studio Z Itajai Shopping",
+              "isPickupStore": true
+            },
+            "polygonName": null,
+            "lockTTL": "12d"
+          },
+          {
+            "id": "Retirar na Loja SC (9ea647b2-b3bd-420f-b2df-3dc8beb25b98)",
+            "name": "Retirar na Loja SC (9ea647b2-b3bd-420f-b2df-3dc8beb25b98)",
+            "shippingEstimate": "11bd",
+            "deliveryWindow": null,
+            "price": 0,
+            "deliveryChannel": "pickup-in-point",
+            "pickupStoreInfo": {
+              "additionalInfo": "",
+              "address": {
+                "addressType": "pickup",
+                "receiverName": null,
+                "addressId": "9ea647b2-b3bd-420f-b2df-3dc8beb25b98",
+                "postalCode": "88339-005",
+                "city": "Balneário Camboriú",
+                "state": "SC",
+                "country": "BRA",
+                "street": "Avenida Santa Catarina",
+                "number": "1",
+                "neighborhood": "Estados",
+                "complement": "",
+                "reference": null,
+                "geoCoordinates": [
+                  -48.6472387,
+                  -26.9929504
+                ]
+              },
+              "dockId": "1f4ebf5",
+              "friendlyName": "Studio Z Balneário Camboriu Shopping",
+              "isPickupStore": true
+            },
+            "polygonName": null,
+            "lockTTL": "12d"
+          },
+          {
+            "id": "Retirar na Loja SC (3ae621bc-79ba-4d25-893a-da4d9845505f)",
+            "name": "Retirar na Loja SC (3ae621bc-79ba-4d25-893a-da4d9845505f)",
+            "shippingEstimate": "11bd",
+            "deliveryWindow": null,
+            "price": 0,
+            "deliveryChannel": "pickup-in-point",
+            "pickupStoreInfo": {
+              "additionalInfo": "",
+              "address": {
+                "addressType": "pickup",
+                "receiverName": null,
+                "addressId": "3ae621bc-79ba-4d25-893a-da4d9845505f",
+                "postalCode": "88353-100",
+                "city": "Brusque",
+                "state": "SC",
+                "country": "BRA",
+                "street": "Rodovia Antônio Heil",
+                "number": "200",
+                "neighborhood": "Centro 1",
+                "complement": "",
+                "reference": null,
+                "geoCoordinates": [
+                  -48.9066052,
+                  -27.0998727
+                ]
+              },
+              "dockId": "1f4ebf5",
+              "friendlyName": "Studio Z Havan",
+              "isPickupStore": true
+            },
+            "polygonName": null,
+            "lockTTL": "12d"
+          },
+          {
+            "id": "Retirar na Loja SC (af51f860-f275-4c69-b932-c60b03f0831f)",
+            "name": "Retirar na Loja SC (af51f860-f275-4c69-b932-c60b03f0831f)",
+            "shippingEstimate": "11bd",
+            "deliveryWindow": null,
+            "price": 0,
+            "deliveryChannel": "pickup-in-point",
+            "pickupStoreInfo": {
+              "additionalInfo": "",
+              "address": {
+                "addressType": "pickup",
+                "receiverName": null,
+                "addressId": "af51f860-f275-4c69-b932-c60b03f0831f",
+                "postalCode": "88210-000",
+                "city": "Porto Belo",
+                "state": "SC",
+                "country": "BRA",
+                "street": "BR 101/SC",
+                "number": "Km 159",
+                "neighborhood": "Sentido Norte",
+                "complement": "",
+                "reference": null,
+                "geoCoordinates": [
+                  -48.61391249999997,
+                  -27.2009033
+                ]
+              },
+              "dockId": "1f4ebf5",
+              "friendlyName": "Studio Z Porto Belo Outlet Premium",
+              "isPickupStore": true
+            },
+            "polygonName": null,
+            "lockTTL": "12d"
+          }
+        ],
+        "shipsTo": [
+          "BRA"
+        ],
+        "deliveryIds": [
+          {
+            "courierId": "1f25a22",
+            "courierName": "Retirar em Loja SC - 8 Dias",
+            "dockId": "1f4ebf5",
+            "quantity": 1,
+            "warehouseId": "1_2"
+          }
+        ],
+        "deliveryChannel": "pickup-in-point",
+        "pickupStoreInfo": {
+          "additionalInfo": "",
+          "address": {
+            "addressType": "pickup",
+            "receiverName": null,
+            "addressId": "c324e99a-a43c-4548-96e7-bde974ee8cfa",
+            "postalCode": "88301-320",
+            "city": "Itajaí",
+            "state": "SC",
+            "country": "BRA",
+            "street": "Rua Samuel Heusi",
+            "number": "234",
+            "neighborhood": "Centro",
+            "complement": "",
+            "reference": null,
+            "geoCoordinates": [
+              -48.65995570000001,
+              -26.9040248
+            ]
+          },
+          "dockId": "1f4ebf5",
+          "friendlyName": "Studio Z Itajai Shopping",
+          "isPickupStore": true
+        },
+        "addressId": "c324e99a-a43c-4548-96e7-bde974ee8cfa",
+        "polygonName": null
+      },
+      "shippingEstimate": "11bd",
+      "shippingEstimateDate": "2099-11-30T13:57:59.2905626+00:00"
+    }
+  ],
+  "marketplaceItems": [],
+  "clientProfileData": {
+    "id": "clientProfileData",
+    "email": "annacarolinamisturagoedert@gmail.com",
+    "firstName": "Anna Carolina ",
+    "lastName": "Mistura Goedert",
+    "documentType": "cpf",
+    "document": "10579827925",
+    "phone": "+5547992291722",
+    "corporateName": null,
+    "tradeName": null,
+    "corporateDocument": null,
+    "stateInscription": null,
+    "corporatePhone": null,
+    "isCorporate": false,
+    "userProfileId": "e678b11f-27f8-4104-8db9-2886f2174710",
+    "customerClass": null
+  },
+  "giftRegistryData": null,
+  "marketingData": null,
+  "ratesAndBenefitsData": {
+    "id": "ratesAndBenefitsData",
+    "rateAndBenefitsIdentifiers": []
+  },
+  "shippingData": {
+    "id": "shippingData",
+    "address": {
+      "addressType": "pickup",
+      "receiverName": "Anna Carolina  Mistura Goedert",
+      "addressId": "c324e99a-a43c-4548-96e7-bde974ee8cfa",
+      "postalCode": "88301-320",
+      "city": "Itajaí",
+      "state": "SC",
+      "country": "BRA",
+      "street": "Rua Samuel Heusi",
+      "number": "234",
+      "neighborhood": "Centro",
+      "complement": "",
+      "reference": null,
+      "geoCoordinates": [
+        -48.65995570000001,
+        -26.9040248
+      ]
+    },
+    "logisticsInfo": [
+      {
+        "itemIndex": 0,
+        "selectedSla": "Retirar na Loja SC (c324e99a-a43c-4548-96e7-bde974ee8cfa)",
+        "lockTTL": "12d",
+        "price": 0,
+        "listPrice": 0,
+        "sellingPrice": 0,
+        "deliveryWindow": null,
+        "deliveryCompany": "Retirar em Loja SC - 8 Dias",
+        "shippingEstimate": "11bd",
+        "shippingEstimateDate": "2099-11-30T13:57:59.2905626+00:00",
+        "slas": [
+          {
+            "id": "Azul Cargo",
+            "name": "Azul Cargo",
+            "shippingEstimate": "6bd",
+            "deliveryWindow": null,
+            "price": 1186,
+            "deliveryChannel": "delivery",
+            "pickupStoreInfo": {
+              "additionalInfo": null,
+              "address": null,
+              "dockId": null,
+              "friendlyName": null,
+              "isPickupStore": false
+            },
+            "polygonName": null,
+            "lockTTL": "12d"
+          },
+          {
+            "id": "Sedex",
+            "name": "Sedex",
+            "shippingEstimate": "2bd",
+            "deliveryWindow": null,
+            "price": 1809,
+            "deliveryChannel": "delivery",
+            "pickupStoreInfo": {
+              "additionalInfo": null,
+              "address": null,
+              "dockId": null,
+              "friendlyName": null,
+              "isPickupStore": false
+            },
+            "polygonName": null,
+            "lockTTL": "12d"
+          },
+          {
+            "id": "Azul Expresso",
+            "name": "Azul Expresso",
+            "shippingEstimate": "3bd",
+            "deliveryWindow": null,
+            "price": 2079,
+            "deliveryChannel": "delivery",
+            "pickupStoreInfo": {
+              "additionalInfo": null,
+              "address": null,
+              "dockId": null,
+              "friendlyName": null,
+              "isPickupStore": false
+            },
+            "polygonName": null,
+            "lockTTL": "12d"
+          },
+          {
+            "id": "Retirar na Loja SC (c324e99a-a43c-4548-96e7-bde974ee8cfa)",
+            "name": "Retirar na Loja SC (c324e99a-a43c-4548-96e7-bde974ee8cfa)",
+            "shippingEstimate": "11bd",
+            "deliveryWindow": null,
+            "price": 0,
+            "deliveryChannel": "pickup-in-point",
+            "pickupStoreInfo": {
+              "additionalInfo": "",
+              "address": {
+                "addressType": "pickup",
+                "receiverName": null,
+                "addressId": "c324e99a-a43c-4548-96e7-bde974ee8cfa",
+                "postalCode": "88301-320",
+                "city": "Itajaí",
+                "state": "SC",
+                "country": "BRA",
+                "street": "Rua Samuel Heusi",
+                "number": "234",
+                "neighborhood": "Centro",
+                "complement": "",
+                "reference": null,
+                "geoCoordinates": [
+                  -48.65995570000001,
+                  -26.9040248
+                ]
+              },
+              "dockId": "1f4ebf5",
+              "friendlyName": "Studio Z Itajai Shopping",
+              "isPickupStore": true
+            },
+            "polygonName": null,
+            "lockTTL": "12d"
+          },
+          {
+            "id": "Retirar na Loja SC (9ea647b2-b3bd-420f-b2df-3dc8beb25b98)",
+            "name": "Retirar na Loja SC (9ea647b2-b3bd-420f-b2df-3dc8beb25b98)",
+            "shippingEstimate": "11bd",
+            "deliveryWindow": null,
+            "price": 0,
+            "deliveryChannel": "pickup-in-point",
+            "pickupStoreInfo": {
+              "additionalInfo": "",
+              "address": {
+                "addressType": "pickup",
+                "receiverName": null,
+                "addressId": "9ea647b2-b3bd-420f-b2df-3dc8beb25b98",
+                "postalCode": "88339-005",
+                "city": "Balneário Camboriú",
+                "state": "SC",
+                "country": "BRA",
+                "street": "Avenida Santa Catarina",
+                "number": "1",
+                "neighborhood": "Estados",
+                "complement": "",
+                "reference": null,
+                "geoCoordinates": [
+                  -48.6472387,
+                  -26.9929504
+                ]
+              },
+              "dockId": "1f4ebf5",
+              "friendlyName": "Studio Z Balneário Camboriu Shopping",
+              "isPickupStore": true
+            },
+            "polygonName": null,
+            "lockTTL": "12d"
+          },
+          {
+            "id": "Retirar na Loja SC (3ae621bc-79ba-4d25-893a-da4d9845505f)",
+            "name": "Retirar na Loja SC (3ae621bc-79ba-4d25-893a-da4d9845505f)",
+            "shippingEstimate": "11bd",
+            "deliveryWindow": null,
+            "price": 0,
+            "deliveryChannel": "pickup-in-point",
+            "pickupStoreInfo": {
+              "additionalInfo": "",
+              "address": {
+                "addressType": "pickup",
+                "receiverName": null,
+                "addressId": "3ae621bc-79ba-4d25-893a-da4d9845505f",
+                "postalCode": "88353-100",
+                "city": "Brusque",
+                "state": "SC",
+                "country": "BRA",
+                "street": "Rodovia Antônio Heil",
+                "number": "200",
+                "neighborhood": "Centro 1",
+                "complement": "",
+                "reference": null,
+                "geoCoordinates": [
+                  -48.9066052,
+                  -27.0998727
+                ]
+              },
+              "dockId": "1f4ebf5",
+              "friendlyName": "Studio Z Havan",
+              "isPickupStore": true
+            },
+            "polygonName": null,
+            "lockTTL": "12d"
+          },
+          {
+            "id": "Retirar na Loja SC (af51f860-f275-4c69-b932-c60b03f0831f)",
+            "name": "Retirar na Loja SC (af51f860-f275-4c69-b932-c60b03f0831f)",
+            "shippingEstimate": "11bd",
+            "deliveryWindow": null,
+            "price": 0,
+            "deliveryChannel": "pickup-in-point",
+            "pickupStoreInfo": {
+              "additionalInfo": "",
+              "address": {
+                "addressType": "pickup",
+                "receiverName": null,
+                "addressId": "af51f860-f275-4c69-b932-c60b03f0831f",
+                "postalCode": "88210-000",
+                "city": "Porto Belo",
+                "state": "SC",
+                "country": "BRA",
+                "street": "BR 101/SC",
+                "number": "Km 159",
+                "neighborhood": "Sentido Norte",
+                "complement": "",
+                "reference": null,
+                "geoCoordinates": [
+                  -48.61391249999997,
+                  -27.2009033
+                ]
+              },
+              "dockId": "1f4ebf5",
+              "friendlyName": "Studio Z Porto Belo Outlet Premium",
+              "isPickupStore": true
+            },
+            "polygonName": null,
+            "lockTTL": "12d"
+          }
+        ],
+        "shipsTo": [
+          "BRA"
+        ],
+        "deliveryIds": [
+          {
+            "courierId": "1f25a22",
+            "courierName": "Retirar em Loja SC - 8 Dias",
+            "dockId": "1f4ebf5",
+            "quantity": 1,
+            "warehouseId": "1_2"
+          }
+        ],
+        "deliveryChannel": "pickup-in-point",
+        "pickupStoreInfo": {
+          "additionalInfo": "",
+          "address": {
+            "addressType": "pickup",
+            "receiverName": null,
+            "addressId": "c324e99a-a43c-4548-96e7-bde974ee8cfa",
+            "postalCode": "88301-320",
+            "city": "Itajaí",
+            "state": "SC",
+            "country": "BRA",
+            "street": "Rua Samuel Heusi",
+            "number": "234",
+            "neighborhood": "Centro",
+            "complement": "",
+            "reference": null,
+            "geoCoordinates": [
+              -48.65995570000001,
+              -26.9040248
+            ]
+          },
+          "dockId": "1f4ebf5",
+          "friendlyName": "Studio Z Itajai Shopping",
+          "isPickupStore": true
+        },
+        "addressId": "c324e99a-a43c-4548-96e7-bde974ee8cfa",
+        "polygonName": null
+      }
+    ],
+    "trackingHints": null,
+    "selectedAddresses": [
+      {
+        "addressId": "c324e99a-a43c-4548-96e7-bde974ee8cfa",
+        "addressType": "pickup",
+        "receiverName": "Anna Carolina  Mistura Goedert",
+        "street": "Rua Samuel Heusi",
+        "number": "234",
+        "complement": "",
+        "neighborhood": "Centro",
+        "postalCode": "88301-320",
+        "city": "Itajaí",
+        "state": "SC",
+        "country": "BRA",
+        "reference": null,
+        "geoCoordinates": [
+          -48.65995570000001,
+          -26.9040248
+        ]
+      }
+    ]
+  },
+  "paymentData": {
+    "transactions": [
+      {
+        "isActive": true,
+        "transactionId": "D46FC76D68B94995922E53BA09071EB3",
+        "merchantName": "STUDIOZ",
+        "payments": [
+          {
+            "id": "6B1A86DC04E74353909546F299455FCC",
+            "paymentSystem": "4",
+            "paymentSystemName": "Mastercard",
+            "value": 14999,
+            "installments": 3,
+            "referenceValue": 14999,
+            "cardHolder": null,
+            "cardNumber": null,
+            "firstDigits": "523421",
+            "lastDigits": "7440",
+            "cvv2": null,
+            "expireMonth": null,
+            "expireYear": null,
+            "url": null,
+            "giftCardId": null,
+            "giftCardName": null,
+            "giftCardCaption": null,
+            "redemptionCode": null,
+            "group": "creditCard",
+            "tid": "10705034098CAC9SV5UB",
+            "dueDate": null,
+            "connectorResponses": {
+              "Tid": "10705034098CAC9SV5UB",
+              "ReturnCode": "0",
+              "Message": "Sucesso",
+              "authId": "213476",
+              "Nsu": "098158",
+              "Arp": "213476",
+              "eci": "0",
+              "lr": "00"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "packageAttachment": {
+    "packages": [
+      {
+        "items": [
+          {
+            "itemIndex": 0,
+            "quantity": 1,
+            "price": 14999,
+            "description": null,
+            "unitMultiplier": 0
+          }
+        ],
+        "courier": "Retirar em Loja SC - 8 Dias",
+        "invoiceNumber": "000064824",
+        "invoiceValue": 14999,
+        "invoiceUrl": null,
+        "issuanceDate": "2019-08-07T03:00:00.0000000+00:00",
+        "trackingNumber": "",
+        "invoiceKey": "42190815048754011980550010000648241055544873",
+        "trackingUrl": null,
+        "embeddedInvoice": "",
+        "type": "Output",
+        "courierStatus": {
+          "status": "unknown",
+          "finished": false,
+          "data": []
+        },
+        "cfop": null,
+        "restitutions": {}
+      }
+    ]
+  },
+  "sellers": [
+    {
+      "id": "1",
+      "name": "Studio Z",
+      "logo": ""
+    }
+  ],
+  "callCenterOperatorData": null,
+  "followUpEmail": "675d51f98dac4dfdafd5630ee2faac0c@ct.vtex.com.br",
+  "lastMessage": null,
+  "hostname": "studioz",
+  "invoiceData": null,
+  "changesAttachment": null,
+  "openTextField": null,
+  "roundingError": 0,
+  "orderFormId": "d597e8d7cc5a4c6eb355cf5b3cfba07d",
+  "commercialConditionData": null,
+  "isCompleted": true,
+  "customData": null,
+  "storePreferencesData": {
+    "countryCode": "BRA",
+    "currencyCode": "BRL",
+    "currencyFormatInfo": {
+      "CurrencyDecimalDigits": 2,
+      "CurrencyDecimalSeparator": ",",
+      "CurrencyGroupSeparator": ".",
+      "CurrencyGroupSize": 3,
+      "StartsWithCurrencySymbol": true
+    },
+    "currencyLocale": 1046,
+    "currencySymbol": "R$",
+    "timeZone": "E. South America Standard Time"
+  },
+  "allowCancellation": false,
+  "allowEdition": false,
+  "isCheckedIn": false,
+  "marketplace": {
+    "baseURL": "http://oms.vtexinternal.com.br/api/oms?an=studioz",
+    "isCertified": null,
+    "name": "studioz"
+  },
+  "authorizedDate": "2019-08-07T12:37:22.9657924+00:00",
+  "invoicedDate": "2019-08-07T16:15:12.3610078+00:00",
+  "cancelReason": null,
+  "itemMetadata": {
+    "Items": [
+      {
+        "Id": "214852",
+        "Seller": "1",
+        "Name": "Tênis Feminino Converse All Star CT AS Core OX Lona Branco - 38",
+        "SkuName": "Tênis Feminino Converse All Star CT AS Core OX Lona Branco - 38",
+        "ProductId": "23926",
+        "RefId": "000000005004938005",
+        "Ean": "1000000193855",
+        "ImageUrl": "http://gabrielacalcados.vteximg.com.br/arquivos/ids/283708-100-100/TENIS-FEMININO-CONVERSE-ALL-STAR-CT-AS-CORE-OX-LONA-BRANCO-1.jpg?v=636777089044600000",
+        "DetailUrl": "/tenis-feminino-converse-all-star-ct-as-core-ox-lona-branco000000000005004938/p",
+        "AssemblyOptions": []
+      }
+    ]
+  },
+  "stateLabel": "Enviado",
+  "stateStatus": "success",
+  "stateStep": 5
+}

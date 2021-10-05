@@ -1,0 +1,20 @@
+{
+  "name": "my-orders-plugin-example",
+  "vendor": "vtex",
+  "version": "0.0.0",
+  "title": "My Orders Example Plugin",
+  "description": "",
+  "dependencies": {
+    "vtex.my-orders-app": "3.x",
+    "vtex.styleguide": "9.x"
+  },
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "store": "0.x"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

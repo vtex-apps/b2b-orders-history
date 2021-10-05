@@ -1,0 +1,28 @@
+{
+  "vendor": "vtex",
+  "name": "b2b-orders-history",
+  "version": "0.0.0",
+  "title": "B2B Orders History",
+  "description": "B2B My orders page",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "messages": "1.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.my-account-commons": "1.x",
+    "vtex.address-form": "4.x",
+    "vtex.totalizer-translator": "2.x",
+    "vtex.css-handles": "0.x",
+    "vtex.search-graphql": "0.x",
+    "vtex.subscriptions-commons": "1.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "scripts": {
+    "postreleasy": "vtex publish -p"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
