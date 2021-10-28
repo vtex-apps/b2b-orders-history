@@ -7,9 +7,11 @@
   "builders": {
     "react": "3.x",
     "store": "0.x",
-    "messages": "1.x"
+    "messages": "1.x",
+    "vtex.storefront-permissions": "1.x"
   },
   "dependencies": {
+    "vtex.my-account": "1.x",
     "vtex.styleguide": "9.x",
     "vtex.my-account-commons": "1.x",
     "vtex.address-form": "4.x",

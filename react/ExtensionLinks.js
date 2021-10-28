@@ -5,7 +5,7 @@ const ExtensionLinks = ({ render, intl }) => {
   return render([
     {
       name: intl.formatMessage({ id: 'orders.title' }),
-      path: '/orders',
+      path: '/orders-history',
     },
   ])
 }

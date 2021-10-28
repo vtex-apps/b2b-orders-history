@@ -1,0 +1,46 @@
+{
+  "name": "B2B Order History",
+  "features": [
+    {
+      "label": "See all orders",
+      "value": "all-orders",
+      "roles": [
+        "store-admin"
+      ]
+    },
+    {
+      "label": "See all organization orders",
+      "value": "organization-orders",
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager"
+      ]
+    },
+    {
+      "label": "See all cost center orders",
+      "value": "costcenter-orders",
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "customer-admin",
+        "customer-approver",
+        "sales-representative"
+      ]
+    },
+    {
+      "label": "See own orders",
+      "value": "own-orders",
+      "roles": [
+        "store-admin",
+        "sales-admin",
+        "sales-manager",
+        "customer-admin",
+        "customer-approver",
+        "sales-representative",
+        "customer-buyer"
+      ]
+    }
+  ]
+}

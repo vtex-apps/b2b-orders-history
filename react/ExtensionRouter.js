@@ -16,15 +16,15 @@ const store = configureStore()
 const ExtensionRouter = () => (
   <Provider store={store}>
     <Fragment>
-      <Route exact path="/orders" component={MyOrders} allowSAC />
-      <Route exact path="/orders/:orderId" component={ViewOrder} allowSAC />
+      <Route exact path="/orders-history" component={MyOrders} allowSAC />
+      <Route exact path="/orders-history/:orderId" component={ViewOrder} allowSAC />
       <Route
         exact
-        path="/orders/:orderId/edit"
+        path="/orders-history/:orderId/edit"
         component={EditOrder}
         allowSAC
       />
-      <Route exact path="/orders/:orderId/cancel" component={CancelOrder} />
+      <Route exact path="/orders-history/:orderId/cancel" component={CancelOrder} />
     </Fragment>
   </Provider>
 )
