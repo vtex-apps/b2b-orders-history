@@ -1,0 +1,6 @@
+{
+  "my-account-menu > my-account-link": "my-account-link.orders-history-link",
+  "my-account-pages > my-account-page": [
+    "my-account-link.orders-history-page"
+  ]
+}
