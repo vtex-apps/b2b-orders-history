@@ -1,107 +1,49 @@
-# My Orders
+# B2B Orders History
 
-My Orders pages powered by Render
+> ℹ The **B2B Orders History** app is part of VTEX’s [B2B Suite](https://developers.vtex.com/vtex-developer-docs/docs/vtex-b2b-suite) solution: a collection of apps that allow stores to manage organizations, storefront roles and permissions, and checkout settings for B2B commerce relationships. We recommend that you use it alongside the other apps in this suite for all functionalities to work as expected.
 
-## Table of Contents
 
-- [Prerequisites](#Prerequisites)
-- [Running](#Running)
-- [Permission Error](#permission)
-- [Features](#Features)
-- [Versions](#Versions)
+When navigating a store, B2B customers who are members of organizations often need to view past orders placed by other users in their organization or cost center.
 
-# Prerequisites
+Considering this, the **B2B Orders History** app replaces the [default Orders page](https://help.vtex.com/en/tutorial/how-my-account-works--2BQ3GiqhqGJTXsWVuio3Xh#orders) in [My Account](https://help.vtex.com/en/tutorial/how-my-account-works--2BQ3GiqhqGJTXsWVuio3Xh) with an adapted version for the B2B scenario.
 
-To get the project up and running you need to have `VTEX CLI` installed on your machine.
+In this version of the **Orders** page, logged-in B2B customers who are members of an organization can view not only their own orders, but also orders placed by members of their organization or cost center, provided that they have the required [storefront permissions](https://developers.vtex.com/vtex-developer-docs/docs/vtex-storefront-permissions).
 
-# Running
 
-`vtex link`
+## Before you start
 
-# Permission Error
-## How to see the orders' page without getting a permission error?
+First, make sure you have the [VTEX IO CLI (Command Line Interface)](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-install) installed in your machine.
 
-- Go to `{workspace}--{account}.myvtex{dev}.com/myorders` and see that there will be a message saying you need to log in
-- Go to `{accountName}.vtexcommercestable.com.br/account/orders` and log in
-- When you're logged in and you can see your orders, copy the `VtexIdclientAutCookie_{accountName}` cookie
-- Create a new cookie on the `myvtex` domain with name `VtexIdclientAutCookie_{accountName}` and value copied from the last step
-- Refresh the page and now you won't have any more permission issues
+To use **B2B Orders History**, you must have the [B2B Organizations](https://developers.vtex.com/vtex-developer-docs/docs/vtex-b2b-organizations) app installed in your store, which will enable you to group B2B users into organizations, with their own assigned payment methods, price tables, product collections, and cost centers. 
 
-# Features
+You must also have the **Storefront Permissions** app installed – it allows you to grant specific storefront roles for B2B customers in an organization. See the [Storefront Permissions](https://developers.vtex.com/vtex-developer-docs/docs/vtex-storefront-permissions) app documentation for information on the available roles and how to customize their permissions.
 
-This app provides an extension point that allows apps to add buttons and actions to the My-Orders-App listing.
 
-## Adding an extra action
+## Installation
 
-### Setting up
+You can install the **B2B Orders History** app by running `vtex install vtex.b2b-organizations` in your terminal, using the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference).
 
-First, make sure you have the store-builder as a dependency in you `manifest.json`:
 
-```diff
-    "builders": {
-      "messages": "1.x",
-      "react": "3.x",
-+     "store": "0.x"
-    },
-```
+## Configuration
 
-Now, create the file `store/interfaces.json` and define the interface:
+After installing the app, you must hide the default **Orders** page within **My Account**. To do this, follow the steps below.
 
-```json
-{
-  "my-orders-extra-actions.show-id-button": {
-    "component": "ShowIdButton"
-  }
-}
-```
 
-The names `show-id-button` and `ShowIdButton` may be whatever it makes more sense for you app.
 
-Lastly, create a `store/plugins.json` file like so:
+1. On the VTEX Admin, access **Account Settings > Apps > My apps**.
+2. In the list of apps, find **My Account** and click on its <img src="https://user-images.githubusercontent.com/77292838/160175751-b3803ff1-41f1-46d2-981a-b57693c03f79.png" width="15" alt-text="gear-icon"/> `Settings`.
 
-```json
-{
-  "my-orders-extra-actions-container > my-orders-extra-actions": "my-orders-extra-actions.show-id-button"
-}
-```
+    If you prefer, you can go directly to the URL `https://accountName.myvtex.com/admin/apps/vtex.my-account@1.x/setup/`
 
-The name `show-id-button` has to be the same as the one chosen at `store/interfaces.json`.
+3. In the **Orders** section, deselect the **Visible** checkbox, as shown in the following image.
+4. Click on `Save`.
 
-#### Creating an extra actions component
+![my-account-settings-orders](https://user-images.githubusercontent.com/77292838/160175754-67874b5b-e1e1-4baa-9209-6b6a35c024f8.png)
 
-You can create a component that renders anything. You can get the OrderId from the component props if needed.
 
-**Example**
 
-```js
-import React, { FC, useState } from 'react'
-import { Button } from 'vtex.styleguide'
-import { FormattedMessage } from 'react-intl'
+## How it works
 
-interface Props {
-  orderId: string
-}
+Once the app is installed and **My Account** is configured, B2B customers who are members of an organization will be able to see all of their organization or cost center’s orders at **My Account > Orders** in the storefront, if they have the required permissions.
 
-const ShowIdButton: FC<Props> = ({ orderId }) => {
-  const [show, setShow] = useState<boolean>(false)
-
-  return (
-    <div className="mt3">
-      <Button block onClick={() => setShow(prevState => !prevState)}>
-        {show ? (
-          <FormattedMessage id="store/extraActions.hideOrderId" />
-        ) : (
-          <FormattedMessage id="store/extraActions.showOrderId" />
-        )}
-      </Button>
-      {show && <div className="pt3 c-muted-1 tc w-100">{orderId}</div>}
-    </div>
-  )
-}
-
-export default ShowIdButton
-```
-
-## Running `my-orders-plugin-example`
-
-Simply clone this repository and run `vtex link` inside the `my-orders-plugin-example` folder.
+By default, only customers with the **Organization Admin** role can see all the organization’s orders. Users with the **Organization Approver** or **Organization Buyer** roles can only see their cost center’s orders. Note that if you have the [Storefront Permissions UI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-storefront-permissions-ui) app you can customize these permissions in your VTEX Admin, on **Account Settings > Storefront Permissions**.
