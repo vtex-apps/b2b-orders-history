@@ -62,7 +62,10 @@ export async function getCustomerEmail() {
 async function checkB2B(baseUrl) {
   const currentSession = await retrieveSession()
 
-  return currentSession?.namespaces['storefront-permissions']?.organization?.value ? baseUrl.replace(/api/gi,'b2b') : baseUrl
+  return currentSession?.namespaces['storefront-permissions']?.organization
+    ?.value
+    ? baseUrl.replace(/api/gi, 'b2b')
+    : baseUrl
 }
 
 export async function getOrdersURL(baseUrl, page = '1') {
@@ -78,7 +81,9 @@ export async function getOrdersURL(baseUrl, page = '1') {
 export async function getOrderDetailURL(baseUrl) {
   const customerEmail = await getImpersonatedCustomerFromSessionOrCookie()
 
-  return customerEmail ? `${baseUrl}?clientEmail=${customerEmail}` : await checkB2B(baseUrl)
+  return customerEmail
+    ? `${baseUrl}?clientEmail=${customerEmail}`
+    : checkB2B(baseUrl)
 }
 
 export const parseJSON = response => {
