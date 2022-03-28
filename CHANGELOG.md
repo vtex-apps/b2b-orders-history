@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- docs folder
+
+### Changed
+
+- Moved the README.md file to the new docs folder
+
 ## [0.0.4] - 2022-03-28
 
 ### Changed
