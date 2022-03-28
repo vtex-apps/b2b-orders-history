@@ -76,7 +76,7 @@ class OrderActions extends Component {
           <OrderAction
             classID={`${cssHandles.editBtn} myo-edit-btn`}
             labelID="order.changeOrder"
-            route={`/orders/${orderId}/edit`}
+            route={`/orders-history/${orderId}/edit`}
             isInternalRoute
           >
             <g>
@@ -90,14 +90,14 @@ class OrderActions extends Component {
             classID={`${cssHandles.cancelBtn} myo-cancel-btn`}
             labelID="order.cancelOrder"
             warning="true"
-            route={`/orders/${orderId}/cancel`}
+            route={`/orders-history/${orderId}/cancel`}
             isInternalRoute
           >
             <path d="M8,0C3.6,0,0,3.6,0,8s3.6,8,8,8s8-3.6,8-8S12.4,0,8,0z M11.5,10.1l-1.4,1.4L8,9.4l-2.1,2.1l-1.4-1.4L6.6,8 L4.5,5.9l1.4-1.4L8,6.6l2.1-2.1l1.4,1.4L9.4,8L11.5,10.1z" />
           </OrderAction>
         )}
         <Link
-          to={`/orders/${orderId}`}
+          to={`/orders-history/${orderId}`}
           className={`${cssHandles.detailsBtn} myo-details-btn db tc pv3 ph5 br2 w-100 f6 fw4 link bg-action-secondary c-on-action-secondary hover-action-secondary mt5`}
         >
           <span className="db pv2">

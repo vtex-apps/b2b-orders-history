@@ -113,7 +113,7 @@ export function goToHomePageAndReload(queryString, anchor) {
 
 export function goToOrdersHomePageWithCanceledOrder(orderId) {
   const queryString = `canceledOrder=${orderId}`
-  const anchor = '/orders'
+  const anchor = '/orders-history'
 
   goToHomePageAndReload(queryString, anchor)
 }

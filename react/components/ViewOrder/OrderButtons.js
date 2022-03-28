@@ -21,7 +21,7 @@ const OrderActions = ({ order, allowSAC }) => {
   const showCancelOrderButton = allowCancellation
 
   const CancelOrderButton = showCancelOrderButton ? (
-    <Link className="no-underline" to={`/orders/${orderId}/cancel`}>
+    <Link className="no-underline" to={`/orders-history/${orderId}/cancel`}>
       <span className="db pv2 c-link hover-c-link link">
         <FormattedMessage id="order.cancelOrder" />
       </span>
@@ -29,7 +29,7 @@ const OrderActions = ({ order, allowSAC }) => {
   ) : null
 
   const EditOrderButton = showEditOrderButton ? (
-    <Link className="no-underline" to={`/orders/${orderId}/edit`}>
+    <Link className="no-underline" to={`/orders-history/${orderId}/edit`}>
       <span className="db pv2 c-link hover-c-link link">
         <FormattedMessage id="order.changeOrder" />
       </span>

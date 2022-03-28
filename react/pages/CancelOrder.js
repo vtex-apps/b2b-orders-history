@@ -37,8 +37,9 @@ class CancelOrder extends Component {
     const orderNumber = order && order.orderId ? `#${order.orderId}` : ''
     const backButton = {
       titleId: 'orders.title',
-      path: '/orders',
+      path: '/orders-history',
     }
+
     return {
       title: `${orderTitle} ${orderNumber}`,
       backButton,
@@ -50,10 +51,12 @@ class CancelOrder extends Component {
     const {
       order: { orderId },
     } = this.props
+
     const {
       selectedOption: { label, value },
       otherReason,
     } = this.state
+
     let reason
 
     if (value === 'other') {
@@ -100,11 +103,13 @@ class CancelOrder extends Component {
       selectedOptionGroup: { name },
       selectedOption: { label },
     } = this.state
+
     return name === groupName && label === optionLabel
   }
 
   loadOptions = () => {
     const { order, intl } = this.props
+
     if (order.allowCancellation) {
       this.props.getCancellationReasons(intl.locale, order)
     } else {
@@ -124,6 +129,7 @@ class CancelOrder extends Component {
     } else {
       this.loadOptions()
     }
+
     window.addEventListener(
       'callcenterOperator.setCustomer.vtex',
       this.handleCustomerImpersonation
@@ -196,6 +202,7 @@ class CancelOrder extends Component {
         </div>
       )
     }
+
     const {
       clientProfileData: { firstName },
     } = order
