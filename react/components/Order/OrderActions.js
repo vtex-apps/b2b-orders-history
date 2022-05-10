@@ -6,6 +6,7 @@ import { withCssHandles } from 'vtex.css-handles'
 import { ExtensionPoint } from 'vtex.render-runtime'
 
 import { OrderUtils, addBaseURL } from '../../utils'
+import { getCustomerEmail } from '../../actions/utils'
 import OrderAction from './OrderAction'
 
 const CSS_HANDLES = [
@@ -17,6 +18,17 @@ const CSS_HANDLES = [
 ]
 
 class OrderActions extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { loggedInEmail: '' }
+  }
+
+  async componentDidMount() {
+    const loggedInEmail = await getCustomerEmail()
+
+    this.setState({ loggedInEmail })
+  }
+
   handleOrderAgainClick = () => {
     const {
       order: { orderGroup },
@@ -34,10 +46,12 @@ class OrderActions extends Component {
       orderId,
       allowEdition,
       allowCancellation,
+      clientProfileData: { email },
       paymentData: { transactions },
     } = order
 
-    const showEditOrderButton = allowSAC && allowEdition
+    const isOwner = email === this.state.loggedInEmail
+    const showEditOrderButton = allowSAC && allowEdition && isOwner
     const showCancelOrderButton = allowCancellation
     const bankInvoiceUrl = OrderUtils.getBankInvoiceUrl(transactions)
 
@@ -60,7 +74,7 @@ class OrderActions extends Component {
             </g>
           </OrderAction>
         )}
-        {!showPrintBankInvoiceButton && (
+        {!showPrintBankInvoiceButton && isOwner && (
           <OrderAction
             classID={`${cssHandles.reorderBtn} myo-reorder-btn`}
             labelID="order.orderAgain"

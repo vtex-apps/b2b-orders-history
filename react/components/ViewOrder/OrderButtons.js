@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { FormattedMessage } from 'react-intl'
 import { Link } from 'vtex.my-account-commons/Router'
@@ -6,9 +6,18 @@ import { Link } from 'vtex.my-account-commons/Router'
 import iconOptions from '../../images/options.svg'
 import DropdownButton from './Dropdown'
 import { addBaseURL } from '../../utils'
+import { getCustomerEmail } from '../../actions/utils'
 
 const OrderActions = ({ order, allowSAC }) => {
-  const { orderId, orderGroup, allowEdition, allowCancellation } = order
+  const {
+    orderId,
+    orderGroup,
+    allowEdition,
+    allowCancellation,
+    clientProfileData: { email },
+  } = order
+
+  const [loggedInEmail, setLoggedInEmail] = useState('')
 
   const handleOrderAgainClick = () => {
     return window.open(
@@ -17,7 +26,22 @@ const OrderActions = ({ order, allowSAC }) => {
     )
   }
 
-  const showEditOrderButton = allowSAC && allowEdition
+  useEffect(() => {
+    async function fetchLoggedInEmail() {
+      const customerEmail = await getCustomerEmail()
+
+      setLoggedInEmail(customerEmail)
+    }
+
+    fetchLoggedInEmail()
+
+    return () => {
+      setLoggedInEmail('')
+    }
+  }, [setLoggedInEmail])
+
+  const isOwner = email === loggedInEmail
+  const showEditOrderButton = allowSAC && allowEdition && isOwner
   const showCancelOrderButton = allowCancellation
 
   const CancelOrderButton = showCancelOrderButton ? (
@@ -77,7 +101,9 @@ const OrderActions = ({ order, allowSAC }) => {
 
   return (
     <ul className="list tl tr-ns ma0 pa0-s">
-      <li className="db dib-ns mr7-ns mb5 mb0-ns">{OrderAgainButton}</li>
+      {isOwner && (
+        <li className="db dib-ns mr7-ns mb5 mb0-ns">{OrderAgainButton}</li>
+      )}
       <li className="db dib-ns mb5 mb0-ns">{options}</li>
     </ul>
   )

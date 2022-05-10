@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Hide options to "Order again" and "Change order" if current user is not the user who originally placed the order
+- When order cancellation is requested, send request to b2b-organizations-graphql endpoint
+
 ## [0.0.5] - 2022-03-29
 
 ### Added
@@ -28,9 +33,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.0.2] - 2021-10-28
 
 ### Added
+
 - Individual menu route under my account
+
 ## [0.0.1] - 2021-10-05
 
 ### Added
-- B2B Orders History compatible with `vtex.storefront-permissions` and `vtex.b2b-organizations-graphql`
 
+- B2B Orders History compatible with `vtex.storefront-permissions` and `vtex.b2b-organizations-graphql`
