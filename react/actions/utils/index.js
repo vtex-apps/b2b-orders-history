@@ -72,18 +72,18 @@ export async function getOrdersURL(baseUrl, page = '1') {
   session = null
 
   const customerEmail = await getImpersonatedCustomerFromSessionOrCookie()
+  const b2bUrl = await checkB2B(baseUrl)
 
   return customerEmail
-    ? `${await checkB2B(baseUrl)}?clientEmail=${customerEmail}&page=${page}`
-    : `${await checkB2B(baseUrl)}?page=${page}`
+    ? `${b2bUrl}?clientEmail=${customerEmail}&page=${page}`
+    : `${b2bUrl}?page=${page}`
 }
 
 export async function getOrderDetailURL(baseUrl) {
   const customerEmail = await getImpersonatedCustomerFromSessionOrCookie()
+  const b2bUrl = await checkB2B(baseUrl)
 
-  return customerEmail
-    ? `${await checkB2B(baseUrl)}?clientEmail=${customerEmail}`
-    : checkB2B(baseUrl)
+  return customerEmail ? `${b2bUrl}?clientEmail=${customerEmail}` : b2bUrl
 }
 
 export const parseJSON = response => {
