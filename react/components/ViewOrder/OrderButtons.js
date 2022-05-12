@@ -14,7 +14,7 @@ const OrderActions = ({ order, allowSAC }) => {
     orderGroup,
     allowEdition,
     allowCancellation,
-    clientProfileData: { email },
+    clientProfileData: { email: clientEmail },
   } = order
 
   const [loggedInEmail, setLoggedInEmail] = useState('')
@@ -26,21 +26,23 @@ const OrderActions = ({ order, allowSAC }) => {
     )
   }
 
+  const fetchLoggedInEmail = async () => {
+    return getCustomerEmail()
+  }
+
   useEffect(() => {
-    async function fetchLoggedInEmail() {
-      const customerEmail = await getCustomerEmail()
-
-      setLoggedInEmail(customerEmail)
-    }
-
     fetchLoggedInEmail()
+      .then(email => {
+        setLoggedInEmail(email)
+      })
+      .catch(error => console.error(error))
 
     return () => {
       setLoggedInEmail('')
     }
   }, [setLoggedInEmail])
 
-  const isOwner = email === loggedInEmail
+  const isOwner = clientEmail === loggedInEmail
   const showEditOrderButton = allowSAC && allowEdition && isOwner
   const showCancelOrderButton = allowCancellation
 
