@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.0.6] - 2022-05-13
+
 ### Fixed
 
 - Hide options to "Order again" and "Change order" if current user is not the user who originally placed the order
