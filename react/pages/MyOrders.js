@@ -22,6 +22,7 @@ class MyOrders extends Component {
     if (!this.props.userOrders) {
       this.props.fetchOrders()
     }
+
     scrollKeeper.restorePagePositions('orders')
     window.addEventListener(
       'callcenterOperator.setCustomer.vtex',
@@ -34,6 +35,7 @@ class MyOrders extends Component {
 
   headerConfig = () => {
     const { cssHandles } = this.props
+
     return {
       titleId: 'orders.title',
       namespace: `${cssHandles.ordersList} vtex-account__orders-list`,

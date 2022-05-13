@@ -59,7 +59,7 @@ class ViewOrder extends Component {
     const orderNumber = order && order.orderId ? `#${order.orderId}` : ''
     const backButton = {
       titleId: 'orders.title',
-      path: '/orders',
+      path: '/orders-history',
     }
 
     return {
@@ -75,6 +75,7 @@ class ViewOrder extends Component {
     } else {
       this.props.fetchParentOrders(this.props.order, [])
     }
+
     window.addEventListener(
       'callcenterOperator.setCustomer.vtex',
       this.handleCustomerImpersonation
@@ -85,6 +86,7 @@ class ViewOrder extends Component {
     if (prevProps.match.params.orderId !== this.props.match.params.orderId) {
       this.props.fetchOrder(this.props.match.params.orderId, true)
     }
+
     window.scrollTo(0, 0)
   }
 
@@ -94,7 +96,7 @@ class ViewOrder extends Component {
   }
 
   goToHomePage = () => {
-    window.browserHistory.push('/orders')
+    window.browserHistory.push('/orders-history')
   }
 
   componentWillUnmount() {
@@ -305,6 +307,7 @@ class ViewOrder extends Component {
         {packages.map((deliveryPackage, index) => {
           const shippingEstimate =
             deliveryPackage.deliveryWindow || estimateShipping(deliveryPackage)
+
           const isPickup = deliveryPackage.deliveryChannel === 'pickup-in-point'
 
           return (

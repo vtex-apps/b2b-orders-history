@@ -31,7 +31,7 @@ const ReplacementHistory = ({ history }) => (
           </td>
           <td className="pa0 w-20 pb3 tr v-mid">
             {!order.isCurrent && (
-              <Link to={`/orders/${order.orderId}`}>
+              <Link to={`/orders-history/${order.orderId}`}>
                 <FormattedMessage id="seeOrder" />
               </Link>
             )}

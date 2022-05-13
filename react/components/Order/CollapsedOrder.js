@@ -36,7 +36,7 @@ class CollapsedOrder extends Component {
 
     return (
       <Link
-        to={`/orders/${orderId}`}
+        to={`/orders-history/${orderId}`}
         className={`${cssHandles.collapsedOrder} myo-collapsed-order no-underline db cf w-100 pa5 ph7-ns ba b--muted-4 bg-muted-5 mb3 pointer grow ${activeClasses}`}
       >
         <div className="fl-ns w-50-ns">

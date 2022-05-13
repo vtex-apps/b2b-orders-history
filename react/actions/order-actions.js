@@ -25,14 +25,13 @@ import {
 import {
   parseJSON,
   checkStatus,
+  checkB2B,
   getOrdersURL,
   getOrderDetailURL,
-  getCustomerEmail,
   OPERATION_ID_HEADER,
   getResponseOperationId,
 } from './utils'
 import { addBaseURL } from '../utils'
-import { logEmailInconsistency } from '../utils/splunk'
 
 const BASE_URL = addBaseURL('/api/oms/user/orders/')
 const ORDERS_DETAILED_LOADED_LIMIT = 3
@@ -78,30 +77,6 @@ async function loadOrder(orderId, listingGuid) {
       return response
     })
     .then(parseJSON)
-    .then(async order => {
-      const loggedInEmail = await getCustomerEmail()
-      const orderEmail = order.clientProfileData.email
-
-      // Throw error when the user email is not the same as the one from email
-      // To AVOID CDN problems
-      if (
-        loggedInEmail &&
-        loggedInEmail.toLowerCase() !== orderEmail.toLowerCase() &&
-        orderEmail.indexOf('@ct.vtex.com.br') === -1
-      ) {
-        await logEmailInconsistency({
-          currentEmail: loggedInEmail,
-          orderEmail,
-          orderId,
-          listingGuid,
-          listingResponseGuid,
-          detailGuid: guid,
-          detailResponseGuid,
-        })
-        throw Error()
-      }
-      return order
-    })
 }
 
 export function goToHomePageAndReload(queryString, anchor) {
@@ -113,7 +88,7 @@ export function goToHomePageAndReload(queryString, anchor) {
 
 export function goToOrdersHomePageWithCanceledOrder(orderId) {
   const queryString = `canceledOrder=${orderId}`
-  const anchor = '/orders'
+  const anchor = '/orders-history'
 
   goToHomePageAndReload(queryString, anchor)
 }
@@ -398,22 +373,23 @@ export const redirect = (orderId, reasonId) => dispatch => {
   )
 }
 
-export const cancelOrder = (orderId, reason = '') => dispatch => {
+export const cancelOrder = (orderId, reason = '') => async dispatch => {
   dispatch(requestOrderCancellation())
   const data = { reason }
 
-  return fetch(
-    addBaseURL(`/api/checkout/pub/orders/${orderId}/user-cancel-request`),
-    {
-      credentials: 'same-origin',
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json; charset=utf-8',
-      },
-      body: JSON.stringify(data),
-    }
+  const url = await checkB2B(
+    addBaseURL(`/api/checkout/pub/orders/${orderId}/user-cancel-request`)
   )
+
+  return fetch(url, {
+    credentials: 'same-origin',
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json; charset=utf-8',
+    },
+    body: JSON.stringify(data),
+  })
     .then(checkStatus)
     .then(() => {
       goToOrdersHomePageWithCanceledOrder(orderId)

@@ -42,7 +42,10 @@ class EditOrder extends Component {
               { orderNumber: order.orderId }
             )
           : orderTitle,
-      path: order && order.orderId ? `/orders/${order.orderId}` : '/orders',
+      path:
+        order && order.orderId
+          ? `/orders-history/${order.orderId}`
+          : '/orders-history',
     }
 
     return {
@@ -53,7 +56,7 @@ class EditOrder extends Component {
   }
 
   goToHomePage = () => {
-    this.props.history.push('/orders')
+    this.props.history.push('/orders-history')
   }
 
   handleChange = (option, groupName) => {
