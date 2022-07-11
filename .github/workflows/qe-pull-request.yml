@@ -19,7 +19,7 @@ jobs:
       danger: true
       dangerRequireChangelog: false
       nodeLint: true
-      nodeTest: true
+      reactTest: true
       nodeSonar: true
       nodeSonarProjectKey: vtex-apps_b2b-orders-history
       nodeSonarOrganization: vtex-apps
