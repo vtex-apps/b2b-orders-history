@@ -246,8 +246,6 @@
   -moz-box-align: center;
   -webkit-box-pack: center;
   -webkit-box-align: center;
-  box-pack: center;
-  box-align: center;
   z-index: 201;
 }
 .vtex-bootstrap .loading-img span {

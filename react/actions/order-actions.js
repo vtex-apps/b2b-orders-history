@@ -354,7 +354,7 @@ export const fetchOrderAndReasons = (orderId, locale, type) => dispatch => {
       if (type === 'replacement') {
         dispatch(getReplacementReasons(locale, order))
       } else {
-        dispatch(getCancellationReasons(locale, order))
+        dispatch(getCancellationReasons(locale))
       }
 
       return null
