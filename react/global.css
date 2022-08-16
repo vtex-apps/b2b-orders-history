@@ -3,10 +3,10 @@
 }
 
 .bt-none {
-  border-top: 0px;
+  border-top: 0;
 }
 .bb-none {
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 .minh-100vh {
   min-height: 100vh;
@@ -149,8 +149,7 @@
   overflow-y: scroll;
 }
 .vtex-bootstrap p {
-  margin-bottom: 7px;
-  margin: 0px 0 10px;
+  margin: 0 0 7px;
 }
 .vtex-bootstrap label {
   margin-bottom: 0;
@@ -225,7 +224,7 @@
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0px;
+  left: 0;
   position: absolute;
 }
 .vtex-bootstrap .loading-bg {
@@ -440,8 +439,7 @@
 .vtex-bootstrap .subscriptions-page h1.subscription-title {
   font-size: 18px;
   padding: 0;
-  margin: 0;
-  margin-top: 15px;
+  margin: 15px 0 0;
 }
 .vtex-bootstrap .subscriptions-page h1.empty-items {
   font-size: 21px;
@@ -458,8 +456,7 @@
   font-weight: bold;
 }
 .vtex-bootstrap .subscriptions-page .customer-actions a {
-  padding: 5px;
-  padding-left: 10px;
+  padding: 5px 5px 5px 10px;
   text-decoration: none;
 }
 .vtex-bootstrap .subscriptions-page .payment-card {
@@ -467,8 +464,7 @@
   border: 1px solid #eee;
 }
 .vtex-bootstrap .subscriptions-page .payment-card .payment-action a {
-  padding: 5px;
-  padding-left: 10px;
+  padding: 5px 5px 5px 10px;
   text-decoration: none;
 }
 .vtex-bootstrap .subscriptions-page .subscription-items-container {
@@ -495,8 +491,7 @@
   margin-top: 18px;
 }
 .vtex-bootstrap .subscriptions-page .item-card .item-actions a {
-  padding: 5px;
-  padding-left: 10px;
+  padding: 5px 5px 5px 10px;
   text-decoration: none;
 }
 .vtex-bootstrap .subscriptions-page .shipping-data {
@@ -512,7 +507,7 @@
   margin-bottom: 5px;
 }
 .vtex-bootstrap .subscriptions-page #subscriptionEditItemForm label:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .vtex-bootstrap .subscriptions-page #subscriptionEditItemForm input {
   height: 28px;
@@ -591,10 +586,7 @@
 .myo-progress-bar .myo-progress-bar__title-font {
   display: block;
   font-size: 13px;
-  margin-top: 1.15em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 1.15em 0 1em;
   font-weight: bold;
 }
 
@@ -800,7 +792,7 @@
 
   .myo-progress-bar .myo-package-progress-bar__margin:last-of-type {
     margin-left: 0.25rem;
-    margin-right: 0rem;
+    margin-right: 0;
   }
 }
 
@@ -897,7 +889,7 @@
   .subscription__product-listing__card {
     height: auto;
     min-height: 6rem;
-    padding: 0rem;
+    padding: 0;
   }
 
   .background-height {
@@ -961,7 +953,7 @@
   }
 }
 
-/* Add tweakpoint inside m */
+/* Add tweak point inside m */
 @media (min-width: 57em) {
   .dn-m-2 {
     display: none;
