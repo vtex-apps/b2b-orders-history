@@ -1,0 +1,5 @@
+files:
+  - source: /messages/en.json
+    translation: /%original_path%/%two_letters_code%.%file_extension%
+  - source: /my-orders-plugin-example/messages/en.json
+    translation: /%original_path%/%two_letters_code%.%file_extension%
