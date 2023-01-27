@@ -1,4 +1,4 @@
 {
-  "store/extraActions.showOrderId": "Show Order ID",
-  "store/extraActions.hideOrderId": "Hide Order ID"
+  "store/extraActions.showOrderId": "Show order ID",
+  "store/extraActions.hideOrderId": "Hide order ID"
 }
