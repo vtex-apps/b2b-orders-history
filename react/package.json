@@ -36,5 +36,5 @@
     "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.120.1/public/@types/vtex.styleguide",
     "vtex.totalizer-translator": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.totalizer-translator@2.1.0/public/_types/react"
   },
-  "version": "0.0.8"
+  "version": "0.0.9"
 }
