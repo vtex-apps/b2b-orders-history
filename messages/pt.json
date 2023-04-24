@@ -157,7 +157,7 @@
   "reasons.shipping": "Alteração da forma de entrega",
   "reasons.payment": "Alteração da forma de pagamento",
   "reasons.profile": "Alteração de dados pessoais",
-  "reasons.unknown": "Razão não especificada",
+  "reasons.unknown": "Motivo não especificado",
   "global.unknownError": "Ocorreu um erro inesperado. Estamos trabalhando para resolvê-lo. Tente novamente mais tarde.",
   "global.errorServer": "Ocorreu um erro em nossos servidores. Por favor, tente novamente mais tarde.",
   "global.loginNeeded": "Você precisa fazer login.",
