@@ -12,7 +12,7 @@
   "commons.reload": "Herladen",
   "commons.cancel": "Annuleer",
   "myo.commons.back": "Terug",
-  "goBackToMyOrders": "ga terug naar mijn bestellingen",
+  "goBackToMyOrders": "Ga terug naar Mijn bestellingen",
   "order": "Bestelling",
   "seeOrder": "Bekijk bestelling",
   "greeting.replaced": "Uw bestelling #{value} is succesvol vervangen!",
@@ -104,7 +104,7 @@
   "package.progress.shippingHandled": "Pakket behandelt",
   "package.progress.deliverToCarrier": "Lever bestelling",
   "package.progress.delivering": "Levering bestelling",
-  "package.progress.delivered": "Besteling geleverd",
+  "package.progress.delivered": "Bestelling geleverd",
   "package.progress.ship": "Verzend pakket",
   "package.progress.shipping": "Verzending pakket",
   "package.progress.shipped": "Pakket verzonden",
@@ -165,5 +165,5 @@
   "global.notFound": "Niet gevonden",
   "order.subscription": "Abonnement",
   "order.subscription.key.frequency": "Frequentie",
-  "product.quantity": "{qtd, plural, one {# un} other {# un}}"
+  "product.quantity": "{qtd, plural, one {# eenheid} other {# eenheden}}"
 }
