@@ -38,7 +38,7 @@
   "order.change.originalOrder": "최초 주문",
   "order.change.currentOrder": "현재 주문",
   "order.viewAllItems": "모든 품목 보기",
-  "order.printBankInvoice": "은행 인보이스 출력",
+  "order.printBankInvoice": "은행 송장 인쇄",
   "order.cancelOrder": "취소 요청",
   "order.changeOrder": "주문 변경",
   "order.orderAgain": "재주문",
@@ -46,7 +46,7 @@
   "order.confirmCancellation": "취소 확인",
   "order.estimatedDeliveryTo": "예상 배송지",
   "order.navigationArrowTitle": "반품 화살표",
-  "order.seeInvoice": "인보이스 보기",
+  "order.seeInvoice": "송장 보기",
   "order.trackingData.clickHereToGoToExternalPage": "배송사 웹페이지에서 배송 정보 보기",
   "order.trackingData.shipping": "배송 #{trackingNumber}",
   "order.stepsFlow.placed": "주문 내역",
@@ -145,7 +145,7 @@
   "paymentData.paymentGroup.creditDirectSale.name": "PIN Pad 결제",
   "paymentData.paymentGroup.creditCard.name": "신용 카드",
   "paymentData.paymentGroup.creditCard.endingIn": "종료",
-  "paymentData.paymentGroup.bankInvoice.name": "인보이스",
+  "paymentData.paymentGroup.bankInvoice.name": "송장",
   "paymentData.paymentGroup.evolucard.name": "Evolucard",
   "paymentData.paymentGroup.promissory.name": "약속 어음",
   "paymentData.paymentGroup.alignet.name": "Alignet",
@@ -165,5 +165,5 @@
   "global.notFound": "찾을 수 없습니다",
   "order.subscription": "구독",
   "order.subscription.key.frequency": "빈도수",
-  "product.quantity": "{qtd, plural, one {# un} other {# un}}"
+  "product.quantity": "{qtd, plural, other {# 개}}"
 }
