@@ -165,5 +165,5 @@
   "global.notFound": "Ikke funnet",
   "order.subscription": "Abonnement",
   "order.subscription.key.frequency": "Frekvens",
-  "product.quantity": "{qtd, plural, one {# un} other {# un}}"
+  "product.quantity": "{qtd, plural, one {# enher} other {# enheter}}"
 }
