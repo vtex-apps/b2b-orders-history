@@ -9,11 +9,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 
-- Bulgarian, English, Spanish, French, Italian, Korean, Dutch, Romanian, Thai, Catalan, Czech, Danish, German, Greek, Finnish, Indonesian, Norwegian, Polish, Russian, Slovakian, Slovenian, Swedish, and Ukrainian translations.
+- Bulgarian, English, Spanish, French, Italian, Korean, Dutch, Romanian, Catalan, Czech, Danish, German, Greek, Finnish, Norwegian, Polish, Russian, Slovakian, Slovenian, Swedish, Spanish, and Ukrainian translations.
 
 ### Added
 
-- Spanish translation.
+- Indonesian and Thai translations.
 
 ## [0.1.0] - 2023-05-25
 
