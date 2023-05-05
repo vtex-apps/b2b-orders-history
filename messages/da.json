@@ -121,8 +121,8 @@
   "order.package.total": "Subtotal",
   "order.shippingEstimate.bd": "{timeAmount, plural, =0 {Samme dag} one {Levering indenfor # hverdag} other {Levering indenfor # hverdage}}",
   "order.shippingEstimate.d": "{timeAmount, plural, =0 {Samme dag} one {Levering indenfor # dag} other {Levering indenfor # dage}}",
-  "order.shippingEstimate.h": "{timeAmount, plural, =0 {Nu} en {Levering indenfor # time} other {Levering indenfor # timer}}",
-  "order.shippingEstimate.m": "{timeAmount, plural, =0 {Nu} en {Levering indenfor # minut} other {Levering indenfor # minutter}}",
+  "order.shippingEstimate.h": "{timeAmount, plural, =0 {Nu} one {Levering indenfor # time} other {Levering indenfor # timer}}",
+  "order.shippingEstimate.m": "{timeAmount, plural, =0 {Nu} one {Levering indenfor # minut} other {Levering indenfor # minutter}}",
   "order.shippingEstimate.withTime": "Levering den {date} kl {hour}",
   "order.shippingEstimate.noTime": "Levering den {date}",
   "order.shippingEstimate.window": "Levering den {date}, mellem {startHour} og {endHour}",
@@ -165,5 +165,5 @@
   "global.notFound": "Ikke fundet",
   "order.subscription": "Abonnement",
   "order.subscription.key.frequency": "Hyppighed",
-  "product.quantity": "{qtd, plural, one {# un} other {# un}}"
+  "product.quantity": "{qtd, plural, one {# stk.} other {# stk.}}"
 }
