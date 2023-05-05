@@ -165,5 +165,5 @@
   "global.notFound": "Nenalezeno",
   "order.subscription": "Předplatné",
   "order.subscription.key.frequency": "Frekvence",
-  "product.quantity": "{qtd, plural, one {# un} other {# un}}"
+  "product.quantity": "{qtd, plural, one {# jedn.} few {# jedn.} many {# jedn.} other {# jedn.}}"
 }
