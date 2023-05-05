@@ -1,0 +1,4 @@
+{
+  "store/extraActions.showOrderId": "Prikaži ID naročila",
+  "store/extraActions.hideOrderId": "Skrij ID naročila"
+}
