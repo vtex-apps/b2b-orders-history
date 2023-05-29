@@ -1,0 +1,4 @@
+{
+    "store/extraActions.showOrderId": "Bestell-ID anzeigen",
+    "store/extraActions.hideOrderId": "Bestell-ID ausblenden"
+}

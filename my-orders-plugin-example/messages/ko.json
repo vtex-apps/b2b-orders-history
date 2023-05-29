@@ -1,0 +1,4 @@
+{
+    "store/extraActions.showOrderId": "주문 ID 표시",
+    "store/extraActions.hideOrderId": "주문 ID 숨기기"
+}

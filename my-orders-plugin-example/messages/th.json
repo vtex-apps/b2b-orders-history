@@ -1,0 +1,4 @@
+{
+    "store/extraActions.showOrderId": "แสดงรหัสคำสั่งซื้อ",
+    "store/extraActions.hideOrderId": "ซ่อนรหัสคำสั่งซื้อ"
+}
