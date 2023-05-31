@@ -1,0 +1,4 @@
+{
+  "store/extraActions.showOrderId": "Vis ordre ID",
+  "store/extraActions.hideOrderId": "Skjul ordre ID"
+}

@@ -1,6 +1,6 @@
 {
   "a11y.orderHeader.shippingModal": "Öppna popup adresser",
-  "commons.hello": "Hallå",
+  "commons.hello": "Hej",
   "commons.continue": "Fortsätt",
   "commons.free": "Gratis",
   "commons.other": "Övriga",
@@ -105,9 +105,9 @@
   "package.progress.deliverToCarrier": "Leverera beställning",
   "package.progress.delivering": "Levererar beställning",
   "package.progress.delivered": "Levererad beställning",
-  "package.progress.ship": "Leverera förpackning\n",
-  "package.progress.shipping": "Levererar förpackning\n",
-  "package.progress.shipped": "Levererad förpackning\n",
+  "package.progress.ship": "Leverera förpackning",
+  "package.progress.shipping": "Levererar förpackning",
+  "package.progress.shipped": "Levererad förpackning",
   "order.summary.title": "Summering",
   "order.summary.total": "Totalt",
   "order.shippingInfo": "Adress",
@@ -136,7 +136,7 @@
   "paymentData.additionalInfo": "Ytterligare information",
   "paymentData.paymentGroup.MercadoPago.name": "MercadoPago",
   "paymentData.paymentGroup.payPal.name": "PayPal",
-  "paymentData.paymentGroup.stelo.name": "\nStelo\n",
+  "paymentData.paymentGroup.stelo.name": "Stelo",
   "paymentData.paymentGroup.safetypay.name": "Online debitering",
   "paymentData.paymentGroup.Bcash.name": "Bcash",
   "paymentData.paymentGroup.giftCard.name": "Presentkort",
@@ -165,5 +165,5 @@
   "global.notFound": "Hittades inte",
   "order.subscription": "Prenumeration",
   "order.subscription.key.frequency": "Frekvens",
-  "product.quantity": "{qtd, plural, one {# un} other {# un}}"
+  "product.quantity": "{qtd, plural, one {# enhet} other {# enheter}}"
 }

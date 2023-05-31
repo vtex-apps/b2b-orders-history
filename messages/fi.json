@@ -165,5 +165,5 @@
   "global.notFound": "Ei löytynyt",
   "order.subscription": "Tilaus",
   "order.subscription.key.frequency": "Tiheys",
-  "product.quantity": "{qtd, plural, one {# un} other {# un}}"
+  "product.quantity": "{qtd, plural, one {# kpl} other {# kpl}}"
 }

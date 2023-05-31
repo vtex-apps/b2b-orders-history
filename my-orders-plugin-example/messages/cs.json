@@ -1,0 +1,4 @@
+{
+  "store/extraActions.showOrderId": "Zobrazit ID objednávky",
+  "store/extraActions.hideOrderId": "Skrýt ID objednávky"
+}

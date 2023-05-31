@@ -1,0 +1,4 @@
+{
+  "store/extraActions.showOrderId": "Mostra l'identificador de la comanda",
+  "store/extraActions.hideOrderId": "Amaga l'identificador de la comanda"
+}

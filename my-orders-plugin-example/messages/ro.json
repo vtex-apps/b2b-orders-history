@@ -1,0 +1,4 @@
+{
+    "store/extraActions.showOrderId": "Arată ID comandă",
+    "store/extraActions.hideOrderId": "Ascunde ID comandă"
+}

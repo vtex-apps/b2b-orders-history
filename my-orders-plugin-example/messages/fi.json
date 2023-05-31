@@ -1,0 +1,4 @@
+{
+  "store/extraActions.showOrderId": "Näytä tilaustunnus",
+  "store/extraActions.hideOrderId": "Piilota tilaustunnus"
+}

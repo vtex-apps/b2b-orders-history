@@ -1,0 +1,4 @@
+{
+  "store/extraActions.showOrderId": "Tampilkan ID pesanan",
+  "store/extraActions.hideOrderId": "Sembunyikan ID Pesanan"
+}

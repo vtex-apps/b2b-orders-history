@@ -99,7 +99,7 @@
   "order.progress.ship": "Odpošlji naročilo",
   "order.progress.shipping": "Odpošiljanje naročila",
   "order.progress.shipped": "Naročilo odposlano",
-  "package.progress.handleShipping": "Obravnaj paket",
+  "package.progress.handleShipping": "Obravnavaj paket",
   "package.progress.handlingShipping": "Obravnavanje paketa",
   "package.progress.shippingHandled": "Paket obravnan",
   "package.progress.deliverToCarrier": "Dobavi naročilo",
@@ -165,5 +165,5 @@
   "global.notFound": "Ni bilo najdeno",
   "order.subscription": "Naročnina",
   "order.subscription.key.frequency": "Frekvenca",
-  "product.quantity": "{qtd, plural, one {# un} other {# un}}"
+  "product.quantity": "{qtd, plural, one {# e} two {# e} few {# e} other {# e}}"
 }

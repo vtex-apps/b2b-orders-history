@@ -1,0 +1,4 @@
+{
+  "store/extraActions.showOrderId": "Visa beställnings-ID",
+  "store/extraActions.hideOrderId": "Dölj beställnings-ID"
+}
