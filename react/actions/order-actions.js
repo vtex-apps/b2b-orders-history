@@ -39,9 +39,11 @@ const ORDERS_DETAILED_LOADED_LIMIT = 3
 let listingResponseGuid = ''
 
 async function loadOrders({ page, guid }) {
+  const { account } = window.__RUNTIME__
   const headers = {
     [OPERATION_ID_HEADER]: guid,
     'x-vtex-user-agent': process.env.VTEX_APP_ID,
+    'x-vtex-account': account,
   }
 
   return fetch(await getOrdersURL(BASE_URL, page ?? '1'), {
@@ -58,10 +60,12 @@ async function loadOrders({ page, guid }) {
 }
 
 async function loadOrder(orderId, listingGuid) {
+  const { account } = window.__RUNTIME__
   const guid = getGUID()
   const headers = {
     [OPERATION_ID_HEADER]: guid,
     'x-vtex-user-agent': process.env.VTEX_APP_ID,
+    'x-vtex-account': account,
   }
 
   let detailResponseGuid = ''
@@ -381,12 +385,15 @@ export const cancelOrder = (orderId, reason = '') => async dispatch => {
     addBaseURL(`/api/checkout/pub/orders/${orderId}/user-cancel-request`)
   )
 
+  const { account } = window.__RUNTIME__
+
   return fetch(url, {
     credentials: 'same-origin',
     method: 'POST',
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json; charset=utf-8',
+      'x-vtex-account': account,
     },
     body: JSON.stringify(data),
   })
