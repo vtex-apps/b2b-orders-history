@@ -64,7 +64,7 @@ export async function checkB2B(baseUrl) {
 
   return currentSession?.namespaces['storefront-permissions']?.organization
     ?.value
-    ? baseUrl.replace(/api/gi, 'b2b')
+    ? baseUrl.replace(/api/gi, '_v/private/b2b')
     : baseUrl
 }
 
