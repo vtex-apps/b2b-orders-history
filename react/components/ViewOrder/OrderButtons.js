@@ -42,7 +42,7 @@ const OrderActions = ({ order, allowSAC }) => {
     }
   }, [setLoggedInEmail])
 
-  const isOwner = clientEmail === loggedInEmail
+  const isOwner = clientEmail.startsWith(loggedInEmail)
   const showEditOrderButton = allowSAC && allowEdition && isOwner
   const showCancelOrderButton = allowCancellation
 

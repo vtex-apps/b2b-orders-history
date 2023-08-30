@@ -30,9 +30,8 @@ class OrderActions extends Component {
   }
 
   handleOrderAgainClick = () => {
-    const {
-      order: { orderGroup },
-    } = this.props
+    const { order } = this.props
+    const { orderGroup } = order
 
     return window.open(
       addBaseURL(`/checkout/orderform/createBy/${orderGroup}`),
@@ -50,7 +49,7 @@ class OrderActions extends Component {
       paymentData: { transactions },
     } = order
 
-    const isOwner = email === this.state.loggedInEmail
+    const isOwner = email.startsWith(this.state.loggedInEmail)
     const showEditOrderButton = allowSAC && allowEdition && isOwner
     const showCancelOrderButton = allowCancellation
     const bankInvoiceUrl = OrderUtils.getBankInvoiceUrl(transactions)
