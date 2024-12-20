@@ -7,6 +7,7 @@
       parameters:
         entityReference: default/component/b2b-orders-history
         sourceDir: ./
+        indexFile: README.md
       when:
       - event: push
         source: branch
