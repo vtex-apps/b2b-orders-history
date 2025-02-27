@@ -4,6 +4,7 @@ metadata:
   name: b2b-orders-history
   annotations:
     github.com/project-slug: vtex-apps/b2b-orders-history
+    vtex.com/application-id: MW970RWI
 spec:
   system: b2b-suite
   type: frontend-ui
