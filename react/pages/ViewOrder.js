@@ -164,18 +164,18 @@ class ViewOrder extends Component {
 
     return renderWrapper(
       <div className="center w-100">
-        <div className="fl w-40-ns pv3 pl0">
+        <div className="fl w-40-ns pv3 pl0 show-on-print">
           <time className="c-on-base">
             <FormattedDate date={creationDate} style="long" />{' '}
             <StatusBadge order={order} />
           </time>
         </div>
 
-        <div className="w-100 fl w-60-ns pv3-ns pr0">
+        <div className="w-100 fl w-60-ns pv3-ns pr0 hide-on-print">
           <OrderButtons order={order} allowSAC />
         </div>
 
-        <section className="w-100 fl mt5 mb2-l mb2-xl">
+        <section className="w-100 fl mt5 mb2-l mb2-xl show-on-print">
           <article className="w-100 fl w-third-m pr3-m mb5">
             <section className="pa5 ba bw1 b--muted-5 h4-plus overflow-y-scroll bg-base">
               <h3 className="c-on-base mt2 mb5 tracked-mega lh-solid ttu f6">
@@ -292,15 +292,17 @@ class ViewOrder extends Component {
           status={status}
           packages={packages}
           render={index => (
-            <ProgressBarSection
-              states={generateProgressBarStates(
-                progressBarStates,
-                index,
-                packages
-              )}
-              currentState={index}
-              hasFinished={OrderUtils.isOrderDelivered(order)}
-            />
+            <div className="show-on-print">
+              <ProgressBarSection
+                states={generateProgressBarStates(
+                  progressBarStates,
+                  index,
+                  packages
+                )}
+                currentState={index}
+                hasFinished={OrderUtils.isOrderDelivered(order)}
+              />
+            </div>
           )}
         />
 
@@ -312,7 +314,7 @@ class ViewOrder extends Component {
 
           return (
             <div
-              className="w-100 pv7 fl"
+              className="w-100 pv7 fl show-on-print"
               key={`${deliveryPackage.selectedSla}_${index}`}
             >
               <div className="flex flex-column">

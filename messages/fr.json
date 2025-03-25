@@ -40,6 +40,7 @@
   "order.viewAllItems": "Afficher tous les articles",
   "order.printBankInvoice": "Imprimer la facture bancaire",
   "order.cancelOrder": "Demander une annulation",
+  "order.printOrder": "Imprimer la commande",
   "order.changeOrder": "Modifier la commande",
   "order.orderAgain": "Commander à nouveau",
   "order.goToOrderDetails": "Afficher les détails de la commande",

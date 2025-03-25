@@ -54,6 +54,21 @@ const OrderActions = ({ order, allowSAC }) => {
     </Link>
   ) : null
 
+  const PrintOrderButton = (
+    <button
+      onClick={() => window.print()}
+      className="no-underline"
+      style={{
+        backgroundColor: 'rgba(0, 0, 0, 0)',
+        border: 'none'
+      }}
+    >
+      <span className="db pv2 c-link hover-c-link link" style={{ cursor: 'pointer', textAlign: 'left' }}>
+        Print Order
+      </span>
+    </button>
+  )
+
   const EditOrderButton = showEditOrderButton ? (
     <Link className="no-underline" to={`/orders-history/${orderId}/edit`}>
       <span className="db pv2 c-link hover-c-link link">
@@ -88,7 +103,7 @@ const OrderActions = ({ order, allowSAC }) => {
     </a>
   )
 
-  const availableOptions = [CancelOrderButton, EditOrderButton].filter(
+  const availableOptions = [CancelOrderButton, EditOrderButton, PrintOrderButton].filter(
     option => option !== null
   )
   const options =
@@ -96,6 +111,7 @@ const OrderActions = ({ order, allowSAC }) => {
       <DropdownButton icon={iconOptions} label="order.moreOptions">
         {EditOrderButton}
         {CancelOrderButton}
+        {PrintOrderButton}
       </DropdownButton>
     ) : (
       availableOptions[0]
