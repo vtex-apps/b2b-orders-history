@@ -163,7 +163,7 @@ class ViewOrder extends Component {
     const hasReplacement = this.props.history && this.props.history.length > 0
 
     return renderWrapper(
-      <div className="center w-100">
+      <div className="center w-100 show-on-print-container">
         <div className="fl w-40-ns pv3 pl0 show-on-print">
           <time className="c-on-base">
             <FormattedDate date={creationDate} style="long" />{' '}
