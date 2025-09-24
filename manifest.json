@@ -9,7 +9,7 @@
     "store": "0.x",
     "messages": "1.x",
     "docs": "0.x",
-    "vtex.storefront-permissions": "2.x"
+    "vtex.storefront-permissions": "3.x"
   },
   "dependencies": {
     "vtex.my-account": "1.x",
