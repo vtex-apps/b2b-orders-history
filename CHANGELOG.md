@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+- Buyer organization view and edit policies
+
 ## [2.0.0] - 2025-09-24
 
 ### Changed

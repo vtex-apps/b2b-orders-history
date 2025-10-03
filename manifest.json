@@ -24,6 +24,14 @@
   "registries": [
     "smartcheckout"
   ],
+  "policies": [
+    {
+      "name": "buyer_organization_view"
+    },
+    {
+      "name": "buyer_organization_edit"
+    }
+  ],
   "scripts": {
     "postreleasy": "vtex publish -p"
   },
