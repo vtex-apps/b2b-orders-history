@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "b2b-orders-history",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "title": "B2B Orders History",
   "description": "B2B My orders page",
   "builders": {
@@ -9,7 +9,7 @@
     "store": "0.x",
     "messages": "1.x",
     "docs": "0.x",
-    "vtex.storefront-permissions": "2.x"
+    "vtex.storefront-permissions": "3.x"
   },
   "dependencies": {
     "vtex.my-account": "1.x",
@@ -23,6 +23,14 @@
   },
   "registries": [
     "smartcheckout"
+  ],
+  "policies": [
+    {
+      "name": "buyer_organization_view"
+    },
+    {
+      "name": "buyer_organization_edit"
+    }
   ],
   "scripts": {
     "postreleasy": "vtex publish -p"
