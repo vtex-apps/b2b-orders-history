@@ -3,8 +3,9 @@ import React from 'react'
 import { FormattedNumber, FormattedMessage } from 'react-intl'
 
 const ProductQuantity = ({ quantity, unitMultiplier, measurementUnit }) => {
-  const qtd = quantity * unitMultiplier
+  const qtd = (quantity || 0) * (unitMultiplier || 1)
   const showMeasurementUnit = measurementUnit !== 'un'
+
   return (
     <>
       {showMeasurementUnit ? (
@@ -13,7 +14,10 @@ const ProductQuantity = ({ quantity, unitMultiplier, measurementUnit }) => {
           {measurementUnit}
         </>
       ) : (
-        <FormattedMessage id="product.quantity" values={{ qtd }} />
+        <>
+          <FormattedNumber value={qtd} maximumFractionDigits={3} />{' '}
+          <FormattedMessage id="product.quantity" values={{ qtd }} />
+        </>
       )}
     </>
   )
