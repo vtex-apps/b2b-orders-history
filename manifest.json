@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "b2b-orders-history",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "title": "B2B Orders History",
   "description": "B2B My orders page",
   "builders": {
