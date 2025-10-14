@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Updated translation of order status for several languages.
+
 ## [2.0.1] - 2025-10-06
 
 ### Added
