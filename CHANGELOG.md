@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Fix quantity on orders-history for different types
+
 ## [2.0.2] - 2025-10-14
 
 ### Fixed
