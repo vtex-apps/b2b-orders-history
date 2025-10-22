@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Fix quantity on orders-history for different types
 
+## [2.0.2] - 2025-10-14
+
+### Fixed
+
+- Updated translation of order status for several languages.
+
 ## [2.0.1] - 2025-10-06
 
 ### Added
