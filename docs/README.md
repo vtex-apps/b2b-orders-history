@@ -9,6 +9,7 @@ Considering this, the **B2B Orders History** app replaces the [default Orders pa
 
 In this version of the **Orders** page, logged-in B2B customers who are members of an organization can view not only their own orders, but also orders placed by members of their organization or cost center, provided that they have the required [storefront permissions](https://developers.vtex.com/vtex-developer-docs/docs/vtex-storefront-permissions).
 
+> ⚠️ This specification applies to B2B Suite only.
 
 ## Before you start
 
